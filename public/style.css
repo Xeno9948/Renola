@@ -797,7 +797,8 @@ img {
     }
 
     .hero-visual {
-        order: -1;
+        order: 0;
+        margin-top: 2rem;
     }
 
     .cta-banner {
