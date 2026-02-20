@@ -1,1 +1,292 @@
-<!DOCTYPE html><html><body>Test</body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renola Investment Group</title>
+    <meta name="description" content="Investing in digital infrastructure, trust and long-term value.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="./assets/logo.png" alt="Renola Investment Group" class="logo-img">
+                </a>
+            </div>
+            <div class="nav-links desktop-only">
+                <a href="#about" class="nav-link" data-i18n="nav_about">About Us</a>
+                <a href="#focus" class="nav-link" data-i18n="nav_focus">Our Focus</a>
+                <a href="#governance" class="nav-link" data-i18n="nav_gov">Governance</a>
+            </div>
+            <div class="nav-actions">
+                <div class="lang-switcher">
+                    <button id="lang-en" class="lang-btn active">EN</button>
+                    <button id="lang-nl" class="lang-btn">NL</button>
+                </div>
+                <a href="#contact" class="btn btn-primary nav-btn desktop-only" data-i18n="nav_cta">Get Started
+                    <span>&#8594;</span></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero_badge">&#x2014; Strategic Investment &#x2014;</div>
+                <h1 class="hero-title" data-i18n="hero_title">Grow your <span class="text-accent">business</span> to the
+                    next level.</h1>
+                <p class="hero-description" data-i18n="hero_description">We invest in and develop scalable digital
+                    enterprises that strengthen reliability, reputation, and data-driven decision-making for businesses
+                    worldwide.</p>
+                <div class="hero-actions">
+                    <a href="#about" class="btn btn-primary" data-i18n="hero_cta">Discover Our Vision
+                        <span>&#8594;</span></a>
+                    <div class="hero-avatars">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                            alt="Team member">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&q=80"
+                            alt="Team member">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                            alt="Team member">
+                        <span class="avatar-text">Connect<br /><strong>Our Experts</strong></span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80"
+                        alt="Corporate professionals in a modern office" class="hero-img">
+
+                    <!-- Overlapping overlapping stats pill -->
+                    <div class="floating-stat stat-bottom-left">
+                        <div class="stat-icon">&#x1F4BC;</div>
+                        <div class="stat-info">
+                            <h4 class="stat-value">15+ Years</h4>
+                            <p class="stat-label">Market Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Logo Strip Section -->
+    <div class="logo-strip section bg-light">
+        <div class="container">
+            <p class="strip-title text-center" data-i18n="trusted_by">&#x2014; Trusted by specialists &#x2014;</p>
+            <div class="logos-grid">
+                <!-- Placeholders for logos, styled via CSS text for now -->
+                <div class="logo-item">Figma</div>
+                <div class="logo-item">Stripe</div>
+                <div class="logo-item">Spotify</div>
+                <div class="logo-item">Dropbox</div>
+                <div class="logo-item">Google</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container text-center max-w-800">
+            <div class="section-badge" data-i18n="about_badge">&#x2014; About Us &#x2014;</div>
+            <h2 class="section-title" data-i18n="about_title">We offer extensive support and strategic <span
+                    class="text-accent">solutions</span> to help businesses grow.</h2>
+            <p class="lead-text" data-i18n="about_intro">Renola Investment Group B.V. is an independent investment and
+                holding company focused on digital platforms, data intelligence, and trust-related technologies.</p>
+
+            <div class="stats-row mt-4">
+                <div class="stat-circle">
+                    <h3>15+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-circle">
+                    <h3>$20m</h3>
+                    <p>Managed Revenue</p>
+                </div>
+                <div class="stat-circle">
+                    <h3>10k</h3>
+                    <p>Satisfied Clients</p>
+                </div>
+                <div class="stat-circle">
+                    <h3>95%</h3>
+                    <p>Retention Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Break Section (replaces the old About side image) -->
+    <section class="section pt-0">
+        <div class="container">
+            <div class="rounded-image-banner">
+                <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1200&q=80"
+                    alt="Team collaborating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Focus Section -->
+    <section class="section bg-light" id="focus">
+        <div class="container">
+            <div class="focus-header">
+                <div>
+                    <div class="section-badge" data-i18n="focus_badge">&#x2014; Our Focus &#x2014;</div>
+                    <h2 class="section-title" data-i18n="focus_title">Driving success through strict strategy.</h2>
+                </div>
+                <div>
+                    <p class="lead-text m-0" data-i18n="focus_intro">We invest in and facilitate enterprises that build
+                        structural trust and digital intelligence worldwide.</p>
+                </div>
+            </div>
+
+            <div class="grid-cards mt-4">
+                <div class="card modern-card">
+                    <div class="card-icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-title" data-i18n="focus_card1_title">Measure Trust</h3>
+                    <p class="card-text" data-i18n="focus_card1_text">Making trust measurable and actionable in a
+                        digital world.</p>
+                </div>
+                <div class="card modern-card">
+                    <div class="card-icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="card-title" data-i18n="focus_card2_title">Strengthen Process</h3>
+                    <p class="card-text" data-i18n="focus_card2_text">Enhancing and optimizing digital business
+                        processes.</p>
+                </div>
+                <div class="card modern-card">
+                    <div class="card-icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="card-title" data-i18n="focus_card4_title">Global Scaling</h3>
+                    <p class="card-text" data-i18n="focus_card4_text">Enabling and driving international scalability
+                        consistently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview section similar to reference (expert advice built for you) -->
+    <section class="section dark-section" id="services">
+        <div class="container text-center">
+            <div class="section-badge light" data-i18n="services_badge">&#x2014; Our Services &#x2014;</div>
+            <h2 class="section-title light-text" data-i18n="services_title">Expert <span
+                    class="text-accent">Advice</span>, Built for You</h2>
+            <p class="lead-text light-subtext" data-i18n="services_sub">Whether you're here to build muscle, find
+                balance, or boost.</p>
+
+            <div class="service-gallery mt-4">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80"
+                        alt="Consulting">
+                    <div class="gallery-content">
+                        <h4>Marketing & Retention</h4>
+                        <div class="gallery-icon">&#x2197;</div>
+                    </div>
+                </div>
+                <div class="gallery-item active">
+                    <div class="gallery-content top">
+                        <h4>Business Consulting</h4>
+                        <p>We invest and build structural support to accelerate your firm's market presence.</p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=600&q=80"
+                        alt="People talking">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80"
+                        alt="Management">
+                    <div class="gallery-content">
+                        <h4>Operation Management</h4>
+                        <div class="gallery-icon">&#x2197;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance Section -->
+    <section class="section governance-section bg-light" id="governance">
+        <div class="container">
+            <div class="governance-layout">
+                <div class="gov-content max-w-800 text-center mx-auto">
+                    <div class="section-badge" data-i18n="gov_badge">&#x2014; Structure &#x2014;</div>
+                    <h2 class="section-title" data-i18n="gov_title">Governance & Structure</h2>
+                    <p class="lead-text" data-i18n="gov_text1">Renola Investment Group operates as a central holding and
+                        participation company, with a clear separation between strategic governance, intellectual
+                        property, and operational entities.</p>
+                </div>
+
+                <div class="cta-banner mt-4">
+                    <div class="cta-content">
+                        <h3 data-i18n="closing_statement">Looking for a place to grow and thrive?</h3>
+                        <p>Join our portfolio of scalable digital enterprises worldwide.</p>
+                    </div>
+                    <a href="#contact" class="btn btn-outline-light">Get in Touch <span>&#8594;</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-2">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <img src="./assets/logo.png" alt="Renola Investment Group" class="footer-logo mb-2">
+                    <p class="footer-desc">Investing in digital infrastructure, trust and long-term value.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#focus">Our Focus</a></li>
+                        <li><a href="#governance">Governance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="year"></span> Renola Investment Group B.V. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

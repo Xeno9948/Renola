@@ -298,8 +298,8 @@
         </div>
         <div>
             <button onclick="downloadEditedHTML()"
-                style="background: #10b981; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 14px; transition: background 0.2s;">Export
-                Changes</button>
+                style="background: #10b981; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 14px; transition: background 0.2s;">Save
+                & Publish</button>
         </div>
     </div>
 
@@ -349,8 +349,16 @@
             });
         });
 
-        // Function to download the modified HTML
-        function downloadEditedHTML() {
+        // Function to post modified HTML to server
+        async function downloadEditedHTML() {
+            const password = prompt('Please enter your Editor Password to save and publish these changes:');
+            if (!password) return; // Cancelled
+
+            const btn = document.querySelector('button[onclick="downloadEditedHTML()"]');
+            const originalText = btn.innerText;
+            btn.innerText = 'Saving...';
+            btn.style.opacity = '0.7';
+
             const clonedDoc = document.documentElement.cloneNode(true);
 
             // Remove editor UI and scripts
@@ -374,13 +382,29 @@
 
             const htmlContent = '<!DOCTYPE html>\n<html lang="en">\n' + clonedDoc.innerHTML + '\n</html>';
 
-            const blob = new Blob([htmlContent], { type: 'text/html' });
-            const a = document.createElement('a');
-            a.href = URL.createObjectURL(blob);
-            a.download = 'index-updated.html';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
+            try {
+                const response = await fetch('/api/save', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ html: htmlContent, password: password })
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    alert('Success: ' + result.message);
+                } else {
+                    alert('Failed to save: ' + result.message);
+                }
+            } catch (err) {
+                console.error(err);
+                alert('A network error occurred while saving.');
+            } finally {
+                btn.innerText = originalText;
+                btn.style.opacity = '1';
+            }
         }
     </script>
 </body>
