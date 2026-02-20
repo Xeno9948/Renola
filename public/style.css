@@ -389,188 +389,17 @@ img {
     animation: fadeLeft 1s ease forwards;
 }
 
-/* --- HERO CLASSIC COMPOSITION (NATIVE UI CARDS) --- */
-.hero-classic-composition {
+.hero-image-wrapper {
     position: relative;
-    width: 100%;
-    max-width: 550px;
-    margin: 0 auto;
-    aspect-ratio: 1/1;
-}
-
-.blob-bg {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    opacity: 0.9;
-}
-
-.portrait-container {
-    position: absolute;
-    top: 10%;
-    right: 5%;
-    width: 75%;
-    height: 80%;
-    border-radius: 200px 200px 20px 20px;
+    border-radius: var(--border-radius-lg);
     overflow: hidden;
-    z-index: 1;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-xl);
 }
 
-.main-portrait {
+.hero-img {
     width: 100%;
-    height: 100%;
+    height: 600px;
     object-fit: cover;
-}
-
-/* Base UI Card */
-.ui-card {
-    position: absolute;
-    background: #fff;
-    border-radius: 16px;
-    padding: 1.25rem;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-    z-index: 2;
-    transition: transform 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.ui-card:hover {
-    transform: translateY(-5px);
-}
-
-/* CredBuddy Card */
-.credbuddy-card {
-    top: 15%;
-    left: -10%;
-    width: 220px;
-}
-
-.ui-header {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.ui-icon {
-    width: 32px;
-    height: 32px;
-    background: var(--clr-navy);
-    color: var(--clr-gold);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9rem;
-}
-
-.ui-title {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--clr-navy);
-}
-
-.ui-score-row {
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.score-lg {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--clr-navy);
-    line-height: 1;
-}
-
-.score-sm {
-    font-size: 0.8rem;
-    color: var(--clr-text-light);
-}
-
-.trend-up {
-    font-size: 0.75rem;
-    color: #16a34a;
-    font-weight: 600;
-    background: #dcfce7;
-    padding: 0.2rem 0.5rem;
-    border-radius: 20px;
-    margin-left: auto;
-}
-
-.ui-chart-mini {
-    display: flex;
-    align-items: flex-end;
-    gap: 4px;
-    height: 40px;
-}
-
-.ui-chart-mini .bar {
-    flex: 1;
-    background: #e2e8f0;
-    border-radius: 2px 2px 0 0;
-}
-
-.ui-chart-mini .bar.active {
-    background: var(--clr-gold);
-}
-
-/* ReviewBuddy Card */
-.reviewbuddy-card {
-    bottom: 5%;
-    right: -15%;
-    width: 260px;
-}
-
-.rb-top {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.75rem;
-}
-
-.rb-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.rb-meta {
-    display: flex;
-    flex-direction: column;
-}
-
-.rb-name {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--clr-navy);
-}
-
-.rb-stars {
-    color: var(--clr-gold);
-    font-size: 0.7rem;
-    display: flex;
-    gap: 2px;
-}
-
-.rb-platform {
-    margin-left: auto;
-    color: #4285F4;
-    font-size: 1.2rem;
-}
-
-.rb-text {
-    font-size: 0.8rem;
-    color: var(--clr-text-main);
-    line-height: 1.4;
-    font-style: italic;
-    margin: 0;
 }
 
 /* Logo Strip */
@@ -980,19 +809,5 @@ img {
         padding-left: 0;
     }
 
-    .hero-classic-composition {
-        transform: scale(0.9);
-        width: 100%;
-        margin-left: -5%;
-    }
 
-    .credbuddy-card {
-        left: -5%;
-        width: 200px;
-    }
-
-    .reviewbuddy-card {
-        right: -5%;
-        width: 240px;
-    }
 }
