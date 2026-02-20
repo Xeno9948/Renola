@@ -13,6 +13,16 @@ app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
+// Basic Auth middleware for the editor
+const basicAuth = require('express-basic-auth');
+
+// Protect the editor route specifically
+app.use('/index-edit.html', basicAuth({
+    users: { 'admin': process.env.EDITOR_PASSWORD || 'local_dev_only' },
+    challenge: true,
+    realm: 'visual-editor'
+}));
+
 // Provide static site
 app.use(express.static(path.join(__dirname, 'public')));
 
