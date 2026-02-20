@@ -4,76 +4,146 @@
 
 const translations = {
     nl: {
-        hero_title: "Renola Investment Group",
-        hero_subtitle: "Investing in digital infrastructure, trust and long-term value.",
-        hero_description: "We investeren in en ontwikkelen schaalbare digitale ondernemingen die betrouwbaarheid, reputatie en datagedreven besluitvorming voor bedrijven wereldwijd versterken.",
+        // Nav
+        nav_about: "Over Ons",
+        nav_focus: "Onze Focus",
+        nav_gov: "Governance",
+        nav_cta: "Aan de slag",
+
+        // Hero
+        hero_badge: "\u2014 Strategische Investering \u2014",
+        hero_title: "Groei uw bedrijf naar het volgende niveau.",
+        hero_description: "Wij investeren in en ontwikkelen schaalbare digitale ondernemingen die betrouwbaarheid, reputatie en datagedreven besluitvorming voor bedrijven wereldwijd versterken.",
         hero_cta: "Ontdek Onze Visie",
+        hero_connect: "Verbinden",
+        hero_experts: "Onze Experts",
 
-        about_title: "Over Renola",
-        about_intro: "Renola Investment Group B.V. is een onafhankelijke investerings- en holdingmaatschappij die zich richt op digitale platforms, data-intelligence en trust-gerelateerde technologieën.",
-        about_support: "Wij ondersteunen en structureren ondernemingen die duurzame waarde creëren via:",
-        about_list_1: "Software en microapplicaties",
-        about_list_2: "Datagedreven inzichten",
-        about_list_3: "Reputatie- en vertrouwensinfrastructuur",
-        about_list_4: "Internationale schaalbaarheid",
-        about_conclusion: "Renola fungeert als strategische aandeelhouder, facilitator en kapitaalpartner, met een focus op lange termijn groei en solide governance.",
+        // Logo strip
+        trusted_by: "\u2014 Vertrouwd door specialisten \u2014",
 
-        minimal_title: "Onze Missie",
-        minimal_text: "Renola Investment Group is een private investerings- en holdingmaatschappij met een focus op digitale platforms, data-infrastructuur en op vertrouwen gebaseerde ondernemingen. Wij structureren, ondersteunen en schalen bedrijven die gedrags- en reputatiesignalen omzetten in meetbare waarde.",
+        // About
+        about_badge: "\u2014 Over Ons \u2014",
+        about_title: "Wij bieden uitgebreide ondersteuning en strategische oplossingen om bedrijven te laten groeien.",
+        about_intro: "Renola Investment Group B.V. is een onafhankelijke investerings- en holdingmaatschappij gericht op digitale platforms, data-intelligence en vertrouwenstechnologieën.",
+        stat1_value: "15+",
+        stat1_label: "Jaar Ervaring",
+        stat2_value: "$20m",
+        stat2_label: "Beheerd Omzet",
+        stat3_value: "10k",
+        stat3_label: "Tevreden Klanten",
+        stat4_value: "95%",
+        stat4_label: "Retentiepercentage",
 
-        focus_title: "Onze Focus",
-        focus_intro: "Wij investeren in en faciliteren ondernemingen die:",
-        focus_card1_title: "Vertrouwen Meetbaar Maken",
-        focus_card1_text: "Vertrouwen vertalen naar meetbare acties in een digitale wereld.",
+        // Focus
+        focus_badge: "\u2014 Onze Focus \u2014",
+        focus_title: "Succes realiseren via strikte strategie.",
+        focus_intro: "Wij investeren in en faciliteren ondernemingen die structureel vertrouwen en digitale intelligentie opbouwen.",
+        focus_card1_title: "Vertrouwen Meten",
+        focus_card1_text: "Vertrouwen meetbaar en toepasbaar maken in een digitale wereld.",
         focus_card2_title: "Processen Versterken",
         focus_card2_text: "Digitale bedrijfsprocessen optimaliseren en versterken.",
-        focus_card3_title: "Strategisch Voordeel",
-        focus_card3_text: "Informatie vertalen naar strategisch concurrentievoordeel.",
         focus_card4_title: "Internationaal Schalen",
-        focus_card4_text: "Grensoverschrijdende schaalbaarheid mogelijk maken.",
-        focus_portfolio: "Onze portfolio omvat digitale ventures actief in Europa en Zuid-Afrika.",
+        focus_card4_text: "Grensoverschrijdende schaalbaarheid consequent mogelijk maken.",
 
+        // Services
+        services_badge: "\u2014 Onze Diensten \u2014",
+        services_title: "Deskundig \u003cspan class=\"text-accent\"\u003eAdvies\u003c/span\u003e, Op Maat",
+        services_sub: "Of u nu marktaandeel wilt vergroten, structuur zoekt of wilt opschalen.",
+        service1_title: "Marketing & Retentie",
+        service2_title: "Zakelijk Advies",
+        service2_text: "Wij investeren en bieden structurele ondersteuning om uw marktaanwezigheid te versnellen.",
+        service3_title: "Operationeel Management",
+
+        // Governance
+        gov_badge: "\u2014 Structuur \u2014",
         gov_title: "Governance & Structuur",
         gov_text1: "Renola Investment Group opereert als centrale holding en participatiemaatschappij, met een duidelijke scheiding tussen strategische governance, intellectuele eigendom en operationele entiteiten.",
-        gov_text2: "Wij geloven in transparantie, eenvoud en lange termijn waardecreatie.",
+        closing_statement: "Op zoek naar een plek om te groeien?",
+        closing_sub: "Sluit u aan bij ons portfolio van schaalbare digitale ondernemingen wereldwijd.",
+        cta_btn: "Neem Contact Op",
 
-        closing_statement: "Building structured value through digital trust and intelligent infrastructure."
+        // Footer
+        footer_desc: "Investeren in digitale infrastructuur, vertrouwen en langetermijnwaarde.",
+        footer_company: "Bedrijf",
+        footer_about: "Over Ons",
+        footer_focus: "Onze Focus",
+        footer_gov: "Governance",
+        footer_legal: "Juridisch",
+        footer_privacy: "Privacybeleid",
+        footer_terms: "Gebruiksvoorwaarden",
+        footer_compliance: "Compliance",
+        footer_copyright: "Alle rechten voorbehouden."
     },
     en: {
-        hero_title: "Renola Investment Group",
-        hero_subtitle: "Investing in digital infrastructure, trust and long-term value.",
+        // Nav
+        nav_about: "About Us",
+        nav_focus: "Our Focus",
+        nav_gov: "Governance",
+        nav_cta: "Get Started",
+
+        // Hero
+        hero_badge: "\u2014 Strategic Investment \u2014",
+        hero_title: "Grow your business to the next level.",
         hero_description: "We invest in and develop scalable digital enterprises that strengthen reliability, reputation, and data-driven decision-making for businesses worldwide.",
         hero_cta: "Discover Our Vision",
+        hero_connect: "Connect",
+        hero_experts: "Our Experts",
 
-        about_title: "About Renola",
+        // Logo strip
+        trusted_by: "\u2014 Trusted by specialists \u2014",
+
+        // About
+        about_badge: "\u2014 About Us \u2014",
+        about_title: "We offer extensive support and strategic solutions to help businesses grow.",
         about_intro: "Renola Investment Group B.V. is an independent investment and holding company focused on digital platforms, data intelligence, and trust-related technologies.",
-        about_support: "We support and structure enterprises that create sustainable value through:",
-        about_list_1: "Software and micro-applications",
-        about_list_2: "Data-driven insights",
-        about_list_3: "Reputation and trust infrastructure",
-        about_list_4: "International scalability",
-        about_conclusion: "Renola acts as a strategic shareholder, facilitator, and capital partner, with a focus on long-term growth and solid governance.",
+        stat1_value: "15+",
+        stat1_label: "Years Experience",
+        stat2_value: "$20m",
+        stat2_label: "Managed Revenue",
+        stat3_value: "10k",
+        stat3_label: "Satisfied Clients",
+        stat4_value: "95%",
+        stat4_label: "Retention Rate",
 
-        minimal_title: "Our Mission",
-        minimal_text: "A private investment and holding company focused on digital platforms, data infrastructure and trust-driven ventures. We structure, support and scale businesses that transform behavioral and reputational signals into measurable value.",
-
-        focus_title: "Our Focus",
-        focus_intro: "We invest in and facilitate enterprises that:",
+        // Focus
+        focus_badge: "\u2014 Our Focus \u2014",
+        focus_title: "Driving success through strict strategy.",
+        focus_intro: "We invest in and facilitate enterprises that build structural trust and digital intelligence worldwide.",
         focus_card1_title: "Measure Trust",
         focus_card1_text: "Making trust measurable and actionable in a digital world.",
         focus_card2_title: "Strengthen Process",
         focus_card2_text: "Enhancing and optimizing digital business processes.",
-        focus_card3_title: "Strategic Advantage",
-        focus_card3_text: "Translating raw information into strategic business advantage.",
         focus_card4_title: "Global Scaling",
-        focus_card4_text: "Enabling and driving international scalability.",
-        focus_portfolio: "Our portfolio includes digital ventures active across Europe and South Africa.",
+        focus_card4_text: "Enabling and driving international scalability consistently.",
 
+        // Services
+        services_badge: "\u2014 Our Services \u2014",
+        services_title: "Expert Advice, Built for You",
+        services_sub: "Whether you're here to grow market share, find structure, or scale.",
+        service1_title: "Marketing & Retention",
+        service2_title: "Business Consulting",
+        service2_text: "We invest and build structural support to accelerate your firm's market presence.",
+        service3_title: "Operation Management",
+
+        // Governance
+        gov_badge: "\u2014 Structure \u2014",
         gov_title: "Governance & Structure",
         gov_text1: "Renola Investment Group operates as a central holding and participation company, with a clear separation between strategic governance, intellectual property, and operational entities.",
-        gov_text2: "We believe in transparency, simplicity, and long-term value creation.",
+        closing_statement: "Looking for a place to grow and thrive?",
+        closing_sub: "Join our portfolio of scalable digital enterprises worldwide.",
+        cta_btn: "Get in Touch",
 
-        closing_statement: "Building structured value through digital trust and intelligent infrastructure."
+        // Footer
+        footer_desc: "Investing in digital infrastructure, trust and long-term value.",
+        footer_company: "Company",
+        footer_about: "About Us",
+        footer_focus: "Our Focus",
+        footer_gov: "Governance",
+        footer_legal: "Legal",
+        footer_privacy: "Privacy Policy",
+        footer_terms: "Terms of Service",
+        footer_compliance: "Compliance",
+        footer_copyright: "All rights reserved."
     }
 };
 
