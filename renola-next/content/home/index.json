@@ -1,0 +1,78 @@
+{
+    "hero": {
+        "badge_en": "— Strategic Investment —",
+        "badge_nl": "— Strategische Investering —",
+        "title_en": "Grow your business to the next level.",
+        "title_nl": "Groei uw bedrijf naar het volgende niveau.",
+        "description_en": "We invest in and develop scalable digital enterprises that strengthen reliability, reputation, and data-driven decision-making for businesses worldwide.",
+        "description_nl": "Wij investeren in en ontwikkelen schaalbare digitale ondernemingen die betrouwbaarheid, reputatie en datagedreven besluitvorming voor bedrijven wereldwijd versterken.",
+        "cta_en": "Discover Our Vision",
+        "cta_nl": "Ontdek Onze Visie",
+        "connect_en": "Connect",
+        "connect_nl": "Verbinden",
+        "experts_en": "Our Experts",
+        "experts_nl": "Onze Experts"
+    },
+    "about": {
+        "title_en": "We offer extensive support and strategic solutions to help businesses grow.",
+        "title_nl": "Wij bieden uitgebreide ondersteuning en strategische oplossingen om bedrijven te laten groeien.",
+        "intro_en": "Renola Investment Group B.V. is an independent investment and holding company focused on digital platforms, data intelligence, and trust-related technologies.",
+        "intro_nl": "Renola Investment Group B.V. is een onafhankelijke investerings- en holdingmaatschappij gericht op digitale platforms, data-intelligence en vertrouwenstechnologieën.",
+        "stat1_label_en": "Years Experience",
+        "stat1_label_nl": "Jaar Ervaring",
+        "stat2_label_en": "Managed Revenue",
+        "stat2_label_nl": "Beheerd Omzet",
+        "stat3_label_en": "Satisfied Clients",
+        "stat3_label_nl": "Tevreden Klanten",
+        "stat4_label_en": "Retention Rate",
+        "stat4_label_nl": "Retentiepercentage"
+    },
+    "focus": {
+        "title_en": "Driving success through strict strategy.",
+        "title_nl": "Succes realiseren via strikte strategie.",
+        "intro_en": "We invest in and facilitate enterprises that build structural trust and digital intelligence worldwide.",
+        "intro_nl": "Wij investeren in en faciliteren ondernemingen die structureel vertrouwen en digitale intelligentie opbouwen.",
+        "card1_title_en": "Measure Trust",
+        "card1_title_nl": "Vertrouwen Meten",
+        "card1_text_en": "Making trust measurable and actionable in a digital world.",
+        "card1_text_nl": "Vertrouwen meetbaar en toepasbaar maken in een digitale wereld.",
+        "card2_title_en": "Strengthen Process",
+        "card2_title_nl": "Processen Versterken",
+        "card2_text_en": "Enhancing and optimizing digital business processes.",
+        "card2_text_nl": "Digitale bedrijfsprocessen optimaliseren en versterken.",
+        "card3_title_en": "Global Scaling",
+        "card3_title_nl": "Internationaal Schalen",
+        "card3_text_en": "Enabling and driving international scalability consistently.",
+        "card3_text_nl": "Grensoverschrijdende schaalbaarheid consequent mogelijk maken."
+    },
+    "services": {
+        "title_en": "Expert Advice, Built for You",
+        "title_nl": "Deskundig Advies, Op Maat",
+        "sub_en": "Whether you're here to grow market share, find structure, or scale.",
+        "sub_nl": "Of u nu marktaandeel wilt vergroten, structuur zoekt of wilt opschalen.",
+        "service1_en": "Marketing & Retention",
+        "service1_nl": "Marketing & Retentie",
+        "service2_en": "Business Consulting",
+        "service2_nl": "Zakelijk Advies",
+        "service2_text_en": "We invest and build structural support to accelerate your firm's market presence.",
+        "service2_text_nl": "Wij investeren en bieden structurele ondersteuning om uw marktaanwezigheid te versnellen.",
+        "service3_en": "Operation Management",
+        "service3_nl": "Operationeel Management"
+    },
+    "governance": {
+        "title_en": "Governance & Structure",
+        "title_nl": "Governance & Structuur",
+        "text_en": "Renola Investment Group operates as a central holding and participation company, with a clear separation between strategic governance, intellectual property, and operational entities.",
+        "text_nl": "Renola Investment Group opereert als centrale holding en participatiemaatschappij, met een duidelijke scheiding tussen strategische governance, intellectuele eigendom en operationele entiteiten.",
+        "cta_heading_en": "Looking for a place to grow and thrive?",
+        "cta_heading_nl": "Op zoek naar een plek om te groeien?",
+        "cta_sub_en": "Join our portfolio of scalable digital enterprises worldwide.",
+        "cta_sub_nl": "Sluit u aan bij ons portfolio van schaalbare digitale ondernemingen wereldwijd.",
+        "cta_btn_en": "Get in Touch",
+        "cta_btn_nl": "Neem Contact Op"
+    },
+    "footer": {
+        "desc_en": "Investing in digital infrastructure, trust and long-term value.",
+        "desc_nl": "Investeren in digitale infrastructuur, vertrouwen en langetermijnwaarde."
+    }
+}

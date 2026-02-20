@@ -1,0 +1,80 @@
+query HomeQuery($relativePath: String!) {
+  home(relativePath: $relativePath) {
+    hero {
+      badge_en
+      badge_nl
+      title_en
+      title_nl
+      description_en
+      description_nl
+      cta_en
+      cta_nl
+      connect_en
+      connect_nl
+      experts_en
+      experts_nl
+    }
+    about {
+      title_en
+      title_nl
+      intro_en
+      intro_nl
+      stat1_label_en
+      stat1_label_nl
+      stat2_label_en
+      stat2_label_nl
+      stat3_label_en
+      stat3_label_nl
+      stat4_label_en
+      stat4_label_nl
+    }
+    focus {
+      title_en
+      title_nl
+      intro_en
+      intro_nl
+      card1_title_en
+      card1_title_nl
+      card1_text_en
+      card1_text_nl
+      card2_title_en
+      card2_title_nl
+      card2_text_en
+      card2_text_nl
+      card3_title_en
+      card3_title_nl
+      card3_text_en
+      card3_text_nl
+    }
+    services {
+      title_en
+      title_nl
+      sub_en
+      sub_nl
+      service1_en
+      service1_nl
+      service2_en
+      service2_nl
+      service2_text_en
+      service2_text_nl
+      service3_en
+      service3_nl
+    }
+    governance {
+      title_en
+      title_nl
+      text_en
+      text_nl
+      cta_heading_en
+      cta_heading_nl
+      cta_sub_en
+      cta_sub_nl
+      cta_btn_en
+      cta_btn_nl
+    }
+    footer {
+      desc_en
+      desc_nl
+    }
+  }
+}
