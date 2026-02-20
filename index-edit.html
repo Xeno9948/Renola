@@ -287,6 +287,102 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Visual Editor Script -->
+    <div id="visual-editor-toolbar"
+        style="position: fixed; top: 0; left: 0; width: 100%; background: #111827; color: white; padding: 12px 20px; z-index: 999999; display: flex; justify-content: space-between; align-items: center; font-family: sans-serif; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <div>
+            <strong style="font-size: 16px;">Visual Edit Mode</strong>
+            <span style="font-size: 13px; margin-left: 15px; color: #9ca3af; font-weight: normal;">Click any text to
+                edit. Click any image to change its URL.</span>
+        </div>
+        <div>
+            <button onclick="downloadEditedHTML()"
+                style="background: #10b981; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 14px; transition: background 0.2s;">Export
+                Changes</button>
+        </div>
+    </div>
+
+    <style id="visual-editor-styles">
+        body {
+            padding-top: 60px !important;
+        }
+
+        .editable-text:hover {
+            outline: 2px dashed #10b981;
+            cursor: text;
+        }
+
+        img:hover {
+            outline: 2px dashed #c6a978;
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    </style>
+
+    <script id="visual-editor-script">
+        // Make text elements editable
+        const textSelectors = 'h1, h2, h3, h4, h5, h6, p, span, a.btn, .nav-link, .strip-title, .logo-item, li';
+        document.querySelectorAll(textSelectors).forEach(el => {
+            // Only make elements with direct text or simple span children editable to avoid breaking layout
+            if (el.children.length === 0 || (el.children.length === 1 && el.children[0].tagName === 'SPAN')) {
+                el.setAttribute('contenteditable', 'true');
+                el.classList.add('editable-text');
+            }
+        });
+
+        // Prevent links from navigating while editing
+        document.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', e => e.preventDefault());
+        });
+
+        // Make images editable
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const currentSrc = img.getAttribute('src');
+                const newAttr = prompt('Enter new image URL:', currentSrc);
+                if (newAttr && newAttr !== currentSrc) {
+                    img.setAttribute('src', newAttr);
+                }
+            });
+        });
+
+        // Function to download the modified HTML
+        function downloadEditedHTML() {
+            const clonedDoc = document.documentElement.cloneNode(true);
+
+            // Remove editor UI and scripts
+            const removeIds = ['#visual-editor-toolbar', '#visual-editor-styles', '#visual-editor-script'];
+            removeIds.forEach(id => {
+                const el = clonedDoc.querySelector(id);
+                if (el) el.remove();
+            });
+
+            // Clean up editable attributes
+            clonedDoc.querySelectorAll('.editable-text').forEach(el => {
+                el.removeAttribute('contenteditable');
+                el.classList.remove('editable-text');
+                if (el.getAttribute('class') === '') el.removeAttribute('class');
+            });
+
+            // Fix body padding
+            const body = clonedDoc.querySelector('body');
+            body.style.paddingTop = '';
+            if (body.getAttribute('style') === '') body.removeAttribute('style');
+
+            const htmlContent = '<!DOCTYPE html>\n<html lang="en">\n' + clonedDoc.innerHTML + '\n</html>';
+
+            const blob = new Blob([htmlContent], { type: 'text/html' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'index-updated.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
 </body>
 
 </html>
