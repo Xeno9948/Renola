@@ -244,9 +244,11 @@ img {
     left: 0;
     width: 100%;
     padding: 1rem 0;
-    background: var(--clr-navy);
+    background: rgba(253, 250, 243, 0.85);
+    /* frosted white gold */
+    backdrop-filter: blur(10px);
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(198, 169, 120, 0.2);
     transition: var(--transition);
 }
 
@@ -268,12 +270,12 @@ img {
 
 .nav-link {
     font-weight: 500;
-    color: var(--clr-white);
+    color: var(--clr-navy);
     font-size: 0.95rem;
 }
 
 .nav-link:hover {
-    color: var(--clr-gold);
+    color: var(--clr-white);
 }
 
 .nav-actions {
@@ -287,7 +289,8 @@ img {
     border: none;
     font-weight: 600;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(17, 24, 39, 0.7);
+    /* dark navy faded */
     font-family: var(--font-sans);
     font-size: 0.85rem;
     padding: 0.2rem 0.4rem;
@@ -295,7 +298,7 @@ img {
 }
 
 .lang-switcher button.active {
-    color: var(--clr-white);
+    color: var(--clr-navy);
 }
 
 .nav-btn {
