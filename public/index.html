@@ -66,22 +66,55 @@
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="hero-mockups">
-                    <!-- Main Dashboard Mockup (CredBuddy) -->
-                    <img src="./assets/credbuddy_mockup.png" alt="CredBuddy Dashboard Mockup"
-                        class="mockup-img mockup-main">
+                <div class="hero-classic-composition">
+                    <div class="blob-bg">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="var(--clr-gold)"
+                                d="M42.7,-73.4C55.9,-67.2,67.6,-57.1,75.1,-44.6C82.7,-32.1,86.2,-16,84.1,-1.2C82,13.6,74.3,27.2,64.9,38.6C55.5,50,44.4,59.3,31.7,66.3C19,73.4,4.7,78.2,-9.3,77.3C-23.2,76.4,-36.8,69.9,-46.8,60.2C-56.9,50.6,-63.3,37.8,-69.5,24.3C-75.7,10.8,-81.6,-3.4,-79.8,-16.6C-77.9,-29.8,-68.3,-42.1,-56.3,-50.2C-44.3,-58.4,-29.9,-62.4,-16.1,-63.7C-2.3,-65.1,10.8,-63.8,42.7,-73.4Z"
+                                transform="translate(100 100) scale(1.1)" />
+                        </svg>
+                    </div>
 
-                    <!-- Floating Secondary Mockup (ReviewBuddy) -->
-                    <img src="./assets/reviewbuddy_mockup.png" alt="ReviewBuddy Mobile App Mockup"
-                        class="mockup-img mockup-secondary">
+                    <div class="portrait-container">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+                            alt="Professional Business Leader" class="main-portrait">
+                    </div>
 
-                    <!-- Overlapping overlapping stats pill -->
-                    <div class="floating-stat stat-mockup-position">
-                        <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
-                        <div class="stat-info">
-                            <h4 class="stat-value">15+ Years</h4>
-                            <p class="stat-label">Market Experience</p>
+                    <!-- Floating CredBuddy Card -->
+                    <div class="ui-card credbuddy-card">
+                        <div class="ui-header">
+                            <div class="ui-icon cred-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="ui-title">CredBuddy Score</div>
                         </div>
+                        <div class="ui-score-row">
+                            <span class="score-lg">98</span><span class="score-sm">/100</span>
+                            <span class="trend-up"><i class="fa-solid fa-arrow-up"></i> +12%</span>
+                        </div>
+                        <div class="ui-chart-mini">
+                            <div class="bar" style="height: 40%"></div>
+                            <div class="bar" style="height: 60%"></div>
+                            <div class="bar" style="height: 30%"></div>
+                            <div class="bar" style="height: 80%"></div>
+                            <div class="bar active" style="height: 100%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Floating ReviewBuddy Card -->
+                    <div class="ui-card reviewbuddy-card">
+                        <div class="rb-top">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
+                                class="rb-avatar" alt="Reviewer">
+                            <div class="rb-meta">
+                                <span class="rb-name">Sarah M.</span>
+                                <div class="rb-stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="rb-platform"><i class="fa-brands fa-google"></i></div>
+                        </div>
+                        <div class="rb-text">"Flawless integration. Our trust metrics have never looked better!"</div>
                     </div>
                 </div>
             </div>
