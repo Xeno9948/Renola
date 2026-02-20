@@ -249,7 +249,7 @@ img {
     backdrop-filter: blur(10px);
     z-index: 1000;
     border-bottom: 1px solid rgba(198, 169, 120, 0.2);
-    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
 }
 
 .nav-container {
