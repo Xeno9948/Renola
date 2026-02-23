@@ -1,6 +1,6 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "next build"
+buildCommand = "tinacms build && next build"
 
 [deploy]
 startCommand = "next start"
