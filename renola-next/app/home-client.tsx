@@ -1,17 +1,24 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useTina } from "tinacms/dist/react";
-import type { HomeQuery } from "@/tina/__generated__/types";
+
+type SectionData = Record<string, string | null | undefined>;
+
+type HomeData = {
+    hero?: SectionData;
+    about?: SectionData;
+    focus?: SectionData;
+    services?: SectionData;
+    governance?: SectionData;
+    footer?: SectionData;
+};
 
 type HomeClientProps = {
-    data: HomeQuery;
-    variables: object;
-    query: string;
+    data: HomeData;
 };
 
 export default function HomeClient(props: HomeClientProps) {
-    const { data } = useTina(props);
-    const home = data.home;
+    const { data } = props;
+    const home = data;
 
     const [lang, setLang] = useState<"en" | "nl">("en");
 
