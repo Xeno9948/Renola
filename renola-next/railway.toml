@@ -1,6 +1,6 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "npx tinacms build --local --skip-indexing && next build"
+buildCommand = "next build"
 
 [deploy]
 startCommand = "next start"
