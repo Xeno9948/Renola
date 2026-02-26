@@ -1,13 +1,16 @@
-import path from "path";
-import fs from "fs";
 import HomeClient from "./home-client";
+import { client } from "../tina/__generated__/client";
 
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const filePath = path.join(process.cwd(), "content", "home", "index.json");
-  const raw = fs.readFileSync(filePath, "utf-8");
-  const data = JSON.parse(raw);
+  const result = await client.queries.home({ relativePath: "index.json" });
 
-  return <HomeClient data={data} />;
+  return (
+    <HomeClient
+      data={result.data}
+      query={result.query}
+      variables={result.variables}
+    />
+  );
 }
