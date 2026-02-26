@@ -1,9 +1,9 @@
 // tina/config.tsx
 import { defineConfig } from "tinacms";
 var config = defineConfig({
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "",
+  clientId: (process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "").trim(),
   branch: "main",
-  token: process.env.TINA_TOKEN || "",
+  token: (process.env.TINA_TOKEN || "").trim(),
   media: {
     tina: {
       publicFolder: "public",
