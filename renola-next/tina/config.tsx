@@ -23,6 +23,7 @@ const config = defineConfig({
         format: "json",
         ui: {
           allowedActions: { create: false, delete: false },
+          router: () => "/",
         },
         fields: [
           // ── HERO ──────────────────────────────────────────────
