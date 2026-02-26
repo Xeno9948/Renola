@@ -14,7 +14,7 @@ console.log('--- Cleaning Environment Variables ---');
 
 try {
     console.log('Running TinaCMS & Next build with cleaned environment variables...');
-    execSync('npx @tinacms/cli build && npx next build', { stdio: 'inherit' });
+    execSync('npx @tinacms/cli build --skip-cloud-checks && npx next build', { stdio: 'inherit' });
 } catch (error) {
     process.exit(error.status || 1);
 }
