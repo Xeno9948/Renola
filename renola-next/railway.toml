@@ -1,6 +1,6 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "tinacms build && next build"
+buildCommand = "node build-wrapper.js"
 
 [deploy]
 startCommand = "next start"
